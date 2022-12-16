@@ -1,6 +1,8 @@
+@import "colors";
+
 body {
   margin: 0;
-  background: #1D1D1D;
+  background: var(--page-bg);
 }
 
 .icon {
@@ -10,15 +12,11 @@ body {
 }
 
 .skeleton {
-  background: linear-gradient(90deg, #3C3C3C 0%, #444444 51.04%, #333333 100%);
+  background: var(--skeleton);
 }
 
 .panel {
-  background: #262626;
-  border: 1px solid #4D4D4D;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
   border-radius: 12px;
 }
-
-@import "inventory";
-@import "profile";
-@import "search";

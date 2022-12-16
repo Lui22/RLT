@@ -4,3 +4,21 @@
     <div class="search__close icon icon_close"></div>
   </div>
 </template>
+
+<style lang="scss">
+.search {
+  padding: 18px 68px 18px 18px;
+  position: relative;
+
+  &__input {
+    border-radius: 12px;
+    height: 36px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+}
+</style>
