@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background: #1D1D1D;
+}
+
+.icon {
+  &_close {
+    content: url("@/assets/icons/carbon_close.svg");
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #3C3C3C 0%, #444444 51.04%, #333333 100%);
+}
+
+.panel {
+  background: #262626;
+  border: 1px solid #4D4D4D;
+  border-radius: 12px;
+}
+
+@import "inventory";
+@import "profile";
+@import "search";
