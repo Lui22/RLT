@@ -1,22 +1,61 @@
 @import "colors";
+@import "SF Pro Display";
 
 body {
   margin: 0;
   background: var(--page-bg);
-}
-
-.icon {
-  &_close {
-    content: url("@/assets/icons/carbon_close.svg");
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .skeleton {
-  background: var(--skeleton);
+  background: var(--skeleton-gradient);
 }
 
 .panel {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
   border-radius: 12px;
+}
+
+.button {
+  padding-block: 8px;
+  border-radius: 8px;
+  border: none;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: background .2s ease-out;
+
+  &_danger {
+    color: #FFFFFF;
+    background: var(--primary-red);
+    padding-inline: 15px;
+
+    &:hover {
+      background: #FF8888;
+    }
+  }
+
+  &_cancel {
+    color: var(--primary-black);
+    background: var(--icon-color);
+    padding-inline: 15px;
+  }
+}
+
+.input {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  border: 1px solid var(--panel-border);
+  background: transparent;
+  color: var(--icon-color);
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  outline: none;
 }

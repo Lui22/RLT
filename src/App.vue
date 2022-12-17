@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import InventoryGrid from "@/components/InventoryGrid.vue";
 import ProfilePanel from "@/components/ProfilePanel.vue";
 import SearchPanel from "@/components/SearchPanel.vue";
@@ -14,9 +14,11 @@ import SearchPanel from "@/components/SearchPanel.vue";
 
 <style lang="scss">
 .inventory {
+  width: 785px;
+
   padding: 32px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: max-content auto;
   gap: 24px;
 
   &__search {

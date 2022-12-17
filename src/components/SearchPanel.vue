@@ -1,7 +1,7 @@
 <template>
   <div class="search panel">
     <div class="search__input skeleton"></div>
-    <div class="search__close icon icon_close"></div>
+    <icon-component class="search__close" type="close" />
   </div>
 </template>
 
@@ -22,3 +22,9 @@
   }
 }
 </style>
+<script>
+import IconComponent from "@/components/IconComponent.vue";
+export default {
+  components: { IconComponent },
+};
+</script>
